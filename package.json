@@ -11,7 +11,7 @@
     "lint": "eslint index.js",
     "test": "npm run lint && mocha --compilers js:babel-register",
     "dev": "cd example && webpack --watch",
-    "build": "webpack -p index.js --target=web --output-library=babel-plugin-transform-vue-jsx --output-path=dist --output-library-target=umd --output-filename=babel-plugin-transform-vue-jsx.min.js --module-bind 'js=babel-loader'"
+    "build": "webpack -p index.js dist/babel-plugin-transform-vue-jsx.min.js --target=web --output-library=babel-plugin-transform-vue-jsx --output-library-target=umd --module-bind 'js=babel-loader'"
   },
   "repository": {
     "type": "git",
